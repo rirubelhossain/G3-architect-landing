@@ -60,25 +60,13 @@ nav li a{
     text-align: center; 
     margin: 0 auto; 
 }
-/* color: var(--dark-01, #131313);
-text-align: center;
-font-family: Work Sans;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: normal; */
+ 
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-/* color: var(--dark-03, #727272);
-text-align: center;
-font-family: Work Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px; /* 162.5% */ 
+ 
 .banner-description{
     font-size: 0.9rem;
     font-weight: 400;
@@ -90,30 +78,11 @@ line-height: 26px; /* 162.5% */
     width: 100%;
 }
 
-/* Responsive Media Query */
-/* Mobile Devices */
-@media screen and (max-width: 576px){
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
-/* Tablets */
-@media screen and (min-width: 576px ) and (max-width:960px) {
-    header{
-        padding: 50px;
-    }
-    nav{
-        flex-direction: column;
-    }
-}
 
 /* Main styles */
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 /* Teams styles */
 .teams-container{
@@ -135,14 +104,44 @@ main{
     font-size: 2.8rem;
     font-weight: 700;
 }
-/* color: var(--dark-03, #727272);
-font-family: Work Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 26px; /* 162.5% */ 
+ 
 
 .teams-description{
     font-size: 1rem;
     font-weight: 400;
+}
+
+
+
+
+
+/* Responsive Media Query */
+
+/* Mobile Devices */
+@media screen and (max-width: 576px){
+    header{
+        padding: 20px;
+    }
+    nav , .teams-container{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        /* display: grid; */
+        grid-template-columns: 1fr;
+         
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+   
+}
+/* Tablets */
+@media screen and (min-width: 576px ) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav, .teams-container{
+        flex-direction: column;
+    }
 }
