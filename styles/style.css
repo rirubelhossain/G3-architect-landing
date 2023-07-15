@@ -109,3 +109,40 @@ line-height: 26px; /* 162.5% */
         flex-direction: column;
     }
 }
+
+/* Main styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Teams styles */
+.teams-container{
+    /* display:grid; */
+    /* grid-template-columns: repeat(2,1fr); */
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+/* color: var(--dark-03, #727272);
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 162.5% */ 
+
+.teams-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
